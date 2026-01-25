@@ -1,47 +1,49 @@
 .container {
-  font-family: "Inter", sans-serif;
+  font-family: Arial, sans-serif;
   padding: 40px 20px;
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
-  color: #333;
+  color: #1a1a1a; /* Dark text */
 }
 
-/* Skills Section Styling */
+/* Skills Section */
 .skills-grid {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
+  gap: 15px;
+  margin-bottom: 40px;
 }
 
 .skill-badge {
-  background: #f0f4f8;
-  padding: 10px 20px;
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 8px 16px;
   border-radius: 20px;
-  font-weight: bold;
-  color: #0070f3;
-  border: 1px solid #d0e2ff;
+  font-weight: 600;
+  border: 1px solid #c7d2fe;
 }
 
-/* Project Card Styling */
+/* Project Cards */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr; /* Two columns */
   gap: 20px;
 }
 
 .project-card {
-  border: 1px solid #eaeaea;
-  border-radius: 12px;
-  padding: 24px;
-  transition: all 0.3s ease; /* This makes the movement smooth */
   background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-/* The Hover Effect */
+/* The Hover Effect! */
 .project-card:hover {
-  transform: translateY(-10px); /* Lifts the card up */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
-  border-color: #0070f3;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: #4f46e5;
 }

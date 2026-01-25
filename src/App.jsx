@@ -28,6 +28,23 @@ function App() {
       <header style={{ textAlign: "center", marginBottom: "60px" }}>
         <h1>John Oyler</h1>
         <p>Front-End Developer in Training</p>
+        <a
+          href="/john_oyler_front_end_resume.pdf"
+          download
+          style={{
+            display: "inline-block",
+            marginTop: "20px",
+            padding: "10px 20px",
+            backgroundColor: "#0070f3",
+            color: "white",
+            textDecoration: "none",
+            borderRadius: "5px",
+            fontWeight: "bold",
+            cursor: "pointer",
+          }}
+        >
+          Download Resume
+        </a>
       </header>
 
       <section>

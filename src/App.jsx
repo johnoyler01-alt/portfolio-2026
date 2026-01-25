@@ -17,7 +17,8 @@ function App() {
     },
     {
       title: "New Wave City",
-      description: "An event landing page featuring custom CSS grid.",
+      description:
+        "A responsive landing page built with Vanilla JS and CSS Grid.",
       link: "https://john-oyler-new-wave-city.netlify.app",
     },
   ];

@@ -81,6 +81,7 @@ function App() {
 
       <footer style={{ marginTop: "80px", textAlign: "center", opacity: 0.6 }}>
         <p>© 2026 John Oyler | Built with React</p>
+        <p>© 2026 John Oyler | Last Updated: Jan 2026</p>
       </footer>
     </div>
   );

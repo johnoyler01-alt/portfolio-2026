@@ -8,14 +8,17 @@ function App() {
     {
       title: "My Portfolio",
       description: "A live React site deployed on Netlify.",
+      link: "https://john-oyler-portfolio.netlify.app",
     },
     {
       title: "Meta Front-End Course",
       description: "Projects coming soon from my Coursera path.",
+      link: "https://github.com/johnoyler01-alt",
     },
     {
       title: "New Wave City",
       description: "An event landing page featuring custom CSS grid.",
+      link: "https://john-oyler-new-wave-city.netlify.app",
     },
   ];
 
@@ -44,7 +47,12 @@ function App() {
             <div key={index} className="project-card">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <a href="#" style={{ color: "#0070f3", textDecoration: "none" }}>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#0070f3", textDecoration: "none" }}
+              >
                 View Project →
               </a>
             </div>

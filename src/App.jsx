@@ -1,35 +1,46 @@
 import React from "react";
 import "./App.css";
-// 1. This is the new line that brings your screenshot into the code
 import calculatorImg from "./assets/calculator-ss.png";
+import newWaveImg from "./assets/new-wave-ss.png";
 
 function App() {
-  const skills = ["HTML", "CSS", "JavaScript", "React", "React Native", "Git"];
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "React Native",
+    "Git",
+    "Netlify",
+    "Vite",
+  ];
 
   const projects = [
     {
       title: "My Portfolio",
-      description: "A live React site deployed on Netlify.",
+      description:
+        "A live React site showcasing my journey, built with Vite and hosted on Netlify.",
       link: "https://john-oyler-portfolio.netlify.app",
     },
     {
       title: "Neon Calculator",
       description:
-        "A sleek, dark-themed mobile app built with React Native and Expo.",
-      // Use your new custom Netlify link here:
+        "A sleek, dark-themed mobile app built with React Native and Expo, deployed for web use.",
       link: "https://john-oyler-calculator.netlify.app",
       image: calculatorImg,
     },
     {
-      title: "Meta Front-End Course",
-      description: "Projects coming soon from my Coursera path.",
-      link: "https://github.com/johnoyler01-alt",
-    },
-    {
       title: "New Wave City",
       description:
-        "A responsive landing page built with Vanilla JS and CSS Grid.",
+        "A high-fidelity landing page exploring responsive design and CSS Grid layouts using Vanilla JavaScript.",
       link: "https://john-oyler-new-wave-city.netlify.app",
+      image: newWaveImg,
+    },
+    {
+      title: "Meta Front-End Course",
+      description:
+        "A collection of advanced projects and certifications from my professional Coursera path.",
+      link: "https://github.com/johnoyler01-alt",
     },
   ];
 
@@ -37,7 +48,21 @@ function App() {
     <div className="container">
       <header style={{ textAlign: "center", marginBottom: "60px" }}>
         <h1>John Oyler</h1>
-        <p>Front-End Developer in Training</p>
+        <p
+          style={{
+            maxWidth: "600px",
+            margin: "0 auto 20px auto",
+            color: "#666",
+          }}
+        >
+          I am a passionate Front-End Developer dedicated to building clean,
+          user-friendly web applications. With a strong foundation in React and
+          modern CSS, I love turning complex problems into simple, beautiful
+          digital experiences.
+        </p>
+        <p style={{ fontSize: "1.2rem", color: "#4f46e5", fontWeight: "600" }}>
+          Front-End Developer
+        </p>
         <a
           href="/john_oyler_front_end_resume.pdf"
           download
@@ -45,10 +70,10 @@ function App() {
             display: "inline-block",
             marginTop: "20px",
             padding: "10px 20px",
-            backgroundColor: "#0070f3",
+            backgroundColor: "#4f46e5",
             color: "white",
             textDecoration: "none",
-            borderRadius: "5px",
+            borderRadius: "8px",
             fontWeight: "bold",
             cursor: "pointer",
           }}
@@ -57,8 +82,28 @@ function App() {
         </a>
       </header>
 
-      <section>
-        <h2 style={{ textAlign: "center" }}>My Skills</h2>
+      {/* NEW ABOUT SECTION */}
+      <section style={{ marginBottom: "60px" }}>
+        <h2 style={{ textAlign: "center" }}>About Me</h2>
+        <p
+          style={{
+            lineHeight: "1.6",
+            textAlign: "center",
+            maxWidth: "700px",
+            margin: "0 auto",
+          }}
+        >
+          Dedicated Front-End Developer with a strong foundation in{" "}
+          <strong>Vanilla JavaScript (ES6+)</strong>, HTML5, and CSS3,
+          specializing in building responsive web and cross-platform mobile
+          interfaces. Proven ability to deliver clean, high-performance
+          solutions using <strong>React and React Native</strong>, from scalable
+          web applications to interactive mobile tools.
+        </p>
+      </section>
+
+      <section style={{ marginBottom: "60px" }}>
+        <h2 style={{ textAlign: "center" }}>Technical Skills</h2>
         <div className="skills-grid">
           {skills.map((skill) => (
             <span key={skill} className="skill-badge">
@@ -69,30 +114,22 @@ function App() {
       </section>
 
       <section>
-        <h2>Projects</h2>
+        <h2 style={{ textAlign: "center" }}>Projects</h2>
         <div className="project-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
-              {/* 3. This new block displays the image if the project has one */}
-              {project.image && (
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  style={{
-                    width: "100%",
-                    borderRadius: "8px",
-                    marginBottom: "15px",
-                    border: "1px solid #333",
-                  }}
-                />
-              )}
+              {project.image && <img src={project.image} alt={project.title} />}
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <a
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "#0070f3", textDecoration: "none" }}
+                style={{
+                  color: "#4f46e5",
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                }}
               >
                 View Project →
               </a>
@@ -101,9 +138,16 @@ function App() {
         </div>
       </section>
 
-      <footer style={{ marginTop: "80px", textAlign: "center", opacity: 0.6 }}>
-        <p>© 2026 John Oyler | Built with React</p>
-        <p>Last Updated: Jan 2026</p>
+      <footer
+        style={{
+          marginTop: "80px",
+          paddingBottom: "40px",
+          textAlign: "center",
+          opacity: 0.6,
+        }}
+      >
+        <p>© 2026 John Oyler | Built with React & Vite</p>
+        <p>Deployed via Netlify</p>
       </footer>
     </div>
   );

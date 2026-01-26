@@ -137,6 +137,77 @@ function App() {
           ))}
         </div>
       </section>
+      <section
+        id="contact"
+        style={{
+          padding: "40px 20px",
+          textAlign: "center",
+          backgroundColor: "#f9f9f9",
+        }}
+      >
+        <h2>Get In Touch</h2>
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          style={{
+            maxWidth: "500px",
+            margin: "0 auto",
+            display: "flex",
+            flexDirection: "column",
+            gap: "15px",
+          }}
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            style={{
+              padding: "10px",
+              borderRadius: "5px",
+              border: "1px solid #ccc",
+            }}
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            style={{
+              padding: "10px",
+              borderRadius: "5px",
+              border: "1px solid #ccc",
+            }}
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+            style={{
+              padding: "10px",
+              borderRadius: "5px",
+              border: "1px solid #ccc",
+              minHeight: "100px",
+            }}
+          ></textarea>
+          <button
+            type="submit"
+            style={{
+              padding: "12px",
+              backgroundColor: "#4f46e5",
+              color: "white",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer",
+              fontWeight: "bold",
+            }}
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
 
       <footer
         style={{

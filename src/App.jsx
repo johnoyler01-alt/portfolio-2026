@@ -2,8 +2,13 @@ import React from "react";
 import "./App.css";
 import calculatorImg from "./assets/calculator-ss.png";
 import newWaveImg from "./assets/new-wave-ss.png";
+import Success from "./Success";
 
 function App() {
+  // 1. ADD THIS GATEKEEPER FIRST
+  if (window.location.pathname === "/success") {
+    return <Success />;
+  }
   const skills = [
     "HTML",
     "CSS",
@@ -150,6 +155,7 @@ function App() {
           name="contact"
           method="POST"
           data-netlify="true"
+          action="/success"
           style={{
             maxWidth: "500px",
             margin: "0 auto",

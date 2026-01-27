@@ -6,7 +6,7 @@ import Success from "./Success";
 
 function App() {
   // 1. ADD THIS GATEKEEPER FIRST
-  if (window.location.pathname === "/success") {
+  {
     return <Success />;
   }
   const skills = [
@@ -155,7 +155,7 @@ function App() {
           name="contact"
           method="POST"
           data-netlify="true"
-          action="/success"
+          action="/success.html"
           style={{
             maxWidth: "500px",
             margin: "0 auto",

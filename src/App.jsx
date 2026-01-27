@@ -95,7 +95,7 @@ function App() {
         >
           I am an emerging Front-End Developer with a strong foundation in React
           and modern CSS. While I've developed the core essentials, I am a
-          lifelong learner at heart—currently deep-diving into new libraries and
+          lifelong learner at heart currently deep-diving into new libraries and
           best practices every day. I’m looking for a team where I can
           contribute my current skills while continuing to grow into a
           senior-level engineer.

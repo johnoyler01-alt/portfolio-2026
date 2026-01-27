@@ -93,12 +93,12 @@ function App() {
             margin: "0 auto",
           }}
         >
-          Dedicated Front-End Developer with a strong foundation in{" "}
-          <strong>Vanilla JavaScript (ES6+)</strong>, HTML5, and CSS3,
-          specializing in building responsive web and cross-platform mobile
-          interfaces. Proven ability to deliver clean, high-performance
-          solutions using <strong>React and React Native</strong>, from scalable
-          web applications to interactive mobile tools.
+          I am an emerging Front-End Developer with a strong foundation in React
+          and modern CSS. While I've mastered the core essentials, I am a
+          lifelong learner at heart—currently deep-diving into new libraries and
+          best practices every day. I’m looking for a team where I can
+          contribute my current skills while continuing to grow into a
+          senior-level engineer.
         </p>
       </section>
 

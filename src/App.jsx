@@ -5,10 +5,12 @@ import newWaveImg from "./assets/new-wave-ss.png";
 import Success from "./Success";
 
 function App() {
-  // 1. ADD THIS GATEKEEPER FIRST
-  {
+  // 1. Only show the success page if the URL actually contains "/success"
+  if (window.location.pathname.includes("/success")) {
     return <Success />;
   }
+
+  // 2. Otherwise, load the full portfolio
   const skills = [
     "HTML",
     "CSS",

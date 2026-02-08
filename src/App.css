@@ -64,3 +64,10 @@
   box-shadow: 0 12px 20px -5px rgba(79, 70, 229, 0.2); /* Soft blue glow */
   border-color: #4f46e5;
 }
+/* Styling for the title right after the main heading */
+h1 + p {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.9rem; /* Slightly smaller looks even more professional with wide spacing */
+  margin-top: 10px;
+}

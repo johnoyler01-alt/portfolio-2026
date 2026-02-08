@@ -29,8 +29,8 @@ function App() {
       title: "AI Writing Assistant",
       description:
         "A professional writing tool powered by Gemini 2.5 Flash. Features secure CI/CD deployment and real-time text optimization.",
-      link: "/assistant",
-      isNew: true, // This triggers the special badge and styling
+      link: "https://ai-writing-assistant-final.netlify.app", // Use the full URL here
+      isNew: true,
     },
     {
       title: "My Portfolio",

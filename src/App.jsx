@@ -69,7 +69,7 @@ function App() {
           Front-End Developer
         </p>
         <a
-          href="/john_oyler_front_end_resume.pdf"
+          href="/John_Oyler_Resume_2026.pdf"
           download
           style={{
             display: "inline-block",

@@ -64,18 +64,7 @@ function App() {
     <div className="container">
       <header style={{ textAlign: "center", marginBottom: "60px" }}>
         <h1>John Oyler</h1>
-        <p
-          style={{
-            maxWidth: "600px",
-            margin: "0 auto 20px auto",
-            color: "#666",
-          }}
-        >
-          I am a passionate Front-End Developer dedicated to building clean,
-          user-friendly web applications. With a strong foundation in React and
-          modern CSS, I love turning complex problems into simple, beautiful
-          digital experiences.
-        </p>
+
         <p style={{ fontSize: "1.2rem", color: "#4f46e5", fontWeight: "600" }}>
           Front-End Developer
         </p>

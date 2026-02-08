@@ -20,9 +20,18 @@ function App() {
     "Git",
     "Netlify",
     "Vite",
+    "Gemini AI API", // New Skill
+    "CI/CD", // New Skill
   ];
 
   const projects = [
+    {
+      title: "AI Writing Assistant",
+      description:
+        "A professional writing tool powered by Gemini 2.5 Flash. Features secure CI/CD deployment and real-time text optimization.",
+      link: "/assistant",
+      isNew: true, // This triggers the special badge and styling
+    },
     {
       title: "My Portfolio",
       description:
@@ -89,7 +98,7 @@ function App() {
         </a>
       </header>
 
-      {/* NEW ABOUT SECTION */}
+      {/* ABOUT SECTION */}
       <section style={{ marginBottom: "60px" }}>
         <h2 style={{ textAlign: "center" }}>About Me</h2>
         <p
@@ -124,7 +133,35 @@ function App() {
         <h2 style={{ textAlign: "center" }}>Projects</h2>
         <div className="project-grid">
           {projects.map((project, index) => (
-            <div key={index} className="project-card">
+            <div
+              key={index}
+              className="project-card"
+              style={
+                project.isNew
+                  ? { position: "relative", border: "2px solid #4f46e5" }
+                  : {}
+              }
+            >
+              {/* Conditional Badge for AI Project */}
+              {project.isNew && (
+                <span
+                  style={{
+                    position: "absolute",
+                    top: "10px",
+                    right: "10px",
+                    backgroundColor: "#4f46e5",
+                    color: "white",
+                    padding: "4px 10px",
+                    borderRadius: "20px",
+                    fontSize: "0.7rem",
+                    fontWeight: "bold",
+                    letterSpacing: "1px",
+                  }}
+                >
+                  NEW / AI
+                </span>
+              )}
+
               {project.image && <img src={project.image} alt={project.title} />}
               <h3>{project.title}</h3>
               <p>{project.description}</p>
@@ -144,12 +181,14 @@ function App() {
           ))}
         </div>
       </section>
+
       <section
         id="contact"
         style={{
           padding: "40px 20px",
           textAlign: "center",
           backgroundColor: "#f9f9f9",
+          marginTop: "60px",
         }}
       >
         <h2>Get In Touch</h2>

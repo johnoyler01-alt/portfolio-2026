@@ -29,7 +29,7 @@ function App() {
       title: "AI Writing Assistant",
       description:
         "A professional writing tool powered by Gemini 2.5 Flash. Features secure CI/CD deployment and real-time text optimization.",
-      link: "https://ai-writing-assistant-final.netlify.app", // Use the full URL here
+      link: "https://ai-writing-assistant-final.netlify.app", // Use the FULL https:// address
       isNew: true,
     },
     {
